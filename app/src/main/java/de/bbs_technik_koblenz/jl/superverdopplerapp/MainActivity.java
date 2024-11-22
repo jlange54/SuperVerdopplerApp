@@ -37,6 +37,12 @@ public class MainActivity extends AppCompatActivity {
         display_doubledNumber = findViewById(R.id.display_doubledNumber);
 
         btn_start.setOnClickListener(view -> startDoublingActivity());
+
+    }
+
+    @Override
+    protected void onResume() {
+        super.onResume();
         update();
     }
 
